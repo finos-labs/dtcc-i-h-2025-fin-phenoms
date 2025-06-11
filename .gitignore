@@ -25,7 +25,7 @@ __pycache__
 *.pyc
 *.tmp
 .pytest_cache
-
+.env
 # MSFT Office
 ~$*.*
 

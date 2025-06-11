@@ -41,8 +41,7 @@ class FinancialDataService {
     async getStockPrice(symbol) {
         // In production, replace this with actual API calls to:
         // - Alpha Vantage (free tier available)
-        // - Finnhub (free tier available)
-        // - IEX Cloud (free tier available)
+        // - Other market data providers as needed
 
         const basePrice = this.getBasePriceForSymbol(symbol);
         const variation = (Math.random() - 0.5) * 10;
@@ -793,8 +792,6 @@ const EnhancedFDC3Dashboard = () => {
                             <h4 className="text-lg font-semibold mb-2 text-orange-200">Real-time Data APIs</h4>
                             <ul className="text-sm space-y-1 text-orange-100">
                                 <li>• Alpha Vantage API (Free tier: 25 requests/day)</li>
-                                <li>• Finnhub API (Free tier: 60 calls/minute)</li>
-                                <li>• IEX Cloud API (Free tier: 50,000 requests/month)</li>
                                 <li>• Yahoo Finance API (Unofficial, free)</li>
                                 <li>• Polygon.io API (Free tier: 5 calls/minute)</li>
                             </ul>
